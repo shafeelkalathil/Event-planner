@@ -1,0 +1,17 @@
+.homecard p{
+    width: 75%;
+    margin-top: 10px;
+}
+.homecard img{
+    width: 75%;
+    height: 350px;
+    border-radius: 5px;
+}
+.homecard{
+    margin-top: 20px;
+}
+.homecard h2{
+    color: blueviolet;
+    font-weight: bold;
+    margin-top: 10px;
+}

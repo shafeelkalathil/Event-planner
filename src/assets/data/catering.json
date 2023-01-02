@@ -1,0 +1,46 @@
+[
+
+
+    {
+     "id":1,
+     "categoryId":1,
+     "companyName":"Eatwell",
+     "companyImg":"https://images.unsplash.com/photo-1616734755909-bb016ce64930?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d2VkZGluZyUyMGNhdGVyaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+
+    },
+    {
+     "id":2,
+     "categoryId":1,
+     "companyName":"Taza",
+     "companyImg":"https://images.unsplash.com/photo-1522413452208-996ff3f3e740?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8d2VkZGluZyUyMGNhdGVyaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+
+    },
+    {
+     "id":3,
+     "categoryId":1,
+     "companyName":"Treat Kitchen",
+     "companyImg":"https://images.unsplash.com/photo-1524777313293-86d2ab467344?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHdlZGRpbmclMjBjYXRlcmluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+
+    },{
+     "id":4,
+     "categoryId":1,
+     "companyName":"SR Catering",
+     "companyImg":"https://images.unsplash.com/photo-1480455454781-1af590be2a58?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHdlZGRpbmclMjBjYXRlcmluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+
+    },
+    {
+     "id":5,
+     "categoryId":1,
+     "companyName":"Nallapass",
+     "companyImg":"https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHdlZGRpbmclMjBjYXRlcmluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+
+    },
+    {
+     "id":6,
+     "categoryId":1,
+     "companyName":"Bismi",
+     "companyImg":"https://media.istockphoto.com/id/948568004/photo/waiter-serving-food-at-luxury-table-set-at-wedding-reception-catering-in-restaurant.jpg?b=1&s=170667a&w=0&k=20&c=atNIwqjAJ_z98zexilCPnyUmYeeQaQDFjZ_BdZof18M="
+
+    }
+
+]

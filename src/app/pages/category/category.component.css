@@ -1,0 +1,32 @@
+.nav img{
+    height: 80px;
+    width: 75%;
+    margin-top: 20px;
+}
+.nav2 a{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+    color: darkcyan;
+    
+}
+.homecard img{
+    width: 75%;
+    height:250px ;
+    margin-top: 60px;
+    border-radius: 5px;
+}
+.homecard-2 h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 7px;
+    color: darkcyan;
+    margin-top: 10px;
+}
+.homecard-2 a{
+    width: 52%;
+    margin-top: 10px;
+}
+.homecard-2 a:hover{
+    color: black;
+}

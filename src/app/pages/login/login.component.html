@@ -1,0 +1,61 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4"></div>
+    <div class="col-lg-4">
+      <div class="form-card mt-3">
+        <form [formGroup]="loginForm" (ngSubmit)="login()">
+          <h3
+            style="color: cornflowerblue; font-weight: bold; text-align: center"
+          >
+            Login
+          </h3>
+          <div class="input-group form-group mt-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text"
+                ><i class="fa-solid fa-phone" style="height: 24px"></i
+              ></span>
+            </div>
+            <input
+              type="text"
+              name="phno"
+              class="form-control"
+              formControlName="phno"
+              placeholder="Phone Number"
+              id="phno"
+              required
+            />
+            <div *ngIf="this.loginForm.get('phno')?.touched&&this.loginForm.get('phno')?.errors" style="color: red;">Invalid Phone Number</div>
+          </div>
+          <div class="input-group form-group mt-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text"
+                ><i class="fa-solid fa-lock" style="height: 24px"></i
+              ></span>
+            </div>
+            <input
+              type="text"
+              name="password"
+              formControlName="password"
+              class="form-control"
+              placeholder="Password"
+              id="pswd"
+              required
+            />
+          </div>
+          <div *ngIf="this.loginForm.get('password')?.touched&&this.loginForm.get('password')?.errors" style="color: red;">Invalid Password</div>
+          <div class="input-group form-group mt-3">
+            <button class="btn btn-primary ">
+              Login<i class="fa-solid fa-right-to-bracket"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div>
+        <p style="color: #2874f0; align-items: baseline;margin-top: 20px;">
+          Not a user? <a routerLink="/register">Register</a>
+        </p>
+      </div>
+    </div>
+    <div class="col-lg-4"></div>
+  </div>
+</div>

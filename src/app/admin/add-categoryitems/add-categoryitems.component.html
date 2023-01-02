@@ -1,0 +1,89 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+            <div class="container">
+                <form  [formGroup]="addCategoryItemForm" (ngSubmit)="addCategoryItem()" >
+                    <h3
+                      style="color: cornflowerblue; font-weight: bold; text-align: center"
+                    >
+                      Add Category Items
+                    </h3>
+                    <div class="input-group form-group mt-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"
+                          ><i class="fa-solid fa-id-card" style="height: 24px"></i
+                        ></span>
+                      </div>
+                      <input
+                        type="text"
+                        name="categoryId"
+                        class="form-control"
+                        formControlName="categoryId"
+                        placeholder="categoryId "
+                        id="categoryId"
+                        required
+                      />
+                    </div>
+                    <div *ngIf="this.addCategoryItemForm.get('categoryId')?.touched&&this.addCategoryItemForm.get('categoryId')?.errors" style="color: red;">Invalid CategoryId</div>
+                    <div class="input-group form-group mt-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"
+                          ><i class="fa-solid fa-lock" style="height: 24px"></i
+                        ></span>
+                      </div>
+                      <input
+                        type="text"
+                        name="companyName"
+                        formControlName="companyName"
+                        class="form-control"
+                        placeholder="companyName"
+                        id="companyName"
+                        required
+                      />
+                    </div>
+                    <div *ngIf="this.addCategoryItemForm.get('companyName')?.touched&&this.addCategoryItemForm.get('companyName')?.errors" style="color: red;">Invalid Company Name</div>
+                    <div class="input-group form-group mt-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"
+                            ><i class="fa-solid fa-lock" style="height: 24px"></i
+                          ></span>
+                        </div>
+                        <input
+                          type="text"
+                          name="description"
+                          formControlName="description"
+                          class="form-control"
+                          placeholder="description"
+                          id="description"
+                          required
+                        />
+                      </div>
+                      <div *ngIf="this.addCategoryItemForm.get('description')?.touched&&this.addCategoryItemForm.get('description')?.errors" style="color: red;">Invalid Description</div>
+                    <div class="input-group form-group mt-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"
+                            ><i class="fa-solid fa-file" style="height: 24px"></i
+                          ></span>
+                        </div>
+                        <input
+                          type="file"
+                          name="image"
+                          (change)="handleInputChange($event)"
+                          class="form-control"
+                          placeholder="image"
+                          id="image"
+                          required
+                        />
+                      </div>
+                      <div *ngIf="this.addCategoryItemForm.get('image')?.touched&&this.addCategoryItemForm.get('image')?.errors" style="color: red;">Invalid Format</div>
+                    <div class="input-group form-group mt-3">
+                      <button class="btn btn-primary ">
+                        Submit<i class="fa-solid fa-right-to-bracket"></i>
+                      </button>
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </div>
+</div>

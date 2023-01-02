@@ -1,0 +1,15 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6"  *ngFor="let c of categoryItems">
+            <div class="homecard" *ngIf="c.categoryId==6">
+                <img src="{{c.companyImg}}" alt="">
+                <h2>{{c.companyName}}</h2>
+                <p>{{c.description}}</p>
+              <button class="btn btn-primary" [routerLink]="['/booking',c.id]">BOOK <i class="bi bi-arrow-right-square-fill mt-2"></i></button> 
+            </div>
+        </div>
+        
+  </div>
+
+</div> 

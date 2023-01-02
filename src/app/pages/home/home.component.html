@@ -1,0 +1,49 @@
+<!-- banner -->
+<div class="banner">
+  <div class="banner-content">
+    <h2 class="mb-5">
+      Let Celebrate Your <br />
+      Party With Us..
+    </h2>
+    <a (click)="bookNow()"
+      >BOOK NOW<i class="bi bi-arrow-right-square-fill"></i
+    ></a>
+  </div>
+</div>
+
+<!--  -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4"></div>
+    <div class="col-lg-4">
+      <h3 class="heading-h3 mt-5">BROWSE BUSINESSES</h3>
+      <p style="text-align: center">
+        Not sure what to search for? Browse some of the most<br />popular
+        categories.
+      </p>
+    </div>
+    <div class="col-lg-4"></div>
+  </div>
+</div>
+
+<!--  -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4" *ngFor="let data of category">
+      <div class="homecard">
+        <img src="{{baseUrl}}/{{ data.image }}" (click)="click()" />
+        <div class="d-flex justify-content-between">
+          <h2 (click)="click()">
+            {{ data.categoryName }}
+           
+          </h2>
+          <a  [routerLink]="[data.categoryName]" *ngIf="token">
+            View More <i class="bi bi-arrow-right-square-fill"></i
+       ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

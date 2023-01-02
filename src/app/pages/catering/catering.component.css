@@ -1,0 +1,19 @@
+.homecard p{
+    width: 75%;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+.homecard img{
+    width: 75%;
+    height: 350px;
+    border-radius: 5px;
+}
+.homecard{
+    margin-top: 20px;
+}
+.homecard h2{
+    color: blueviolet;
+    font-weight: bold;
+    margin-top: 10px;
+}

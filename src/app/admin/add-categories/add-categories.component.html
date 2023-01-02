@@ -1,0 +1,76 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+            <div class="container">
+                <form [formGroup]="addCategoryForm"  (ngSubmit)="addCategory()"   >
+                    <h3
+                      style="color: cornflowerblue; font-weight: bold; text-align: center"
+                    >
+                      Add Category
+                    </h3>
+                    <div class="input-group form-group mt-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"
+                          ><i class="fa-solid fa-id-card" style="height: 24px"></i
+                        ></span>
+                      </div>
+                      <input
+                        type="text"
+                        name="categoryId"
+                        class="form-control"
+                        formControlName="categoryId"
+                        placeholder="categoryId "
+                        id="categoryId"
+                        required
+                      />
+                    </div><div *ngIf="this.addCategoryForm.get('categoryId')?.touched&&this.addCategoryForm.get('categoryId')?.errors" style="color: red;">Invalid CategoryId</div>
+                    <div class="input-group form-group mt-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"
+                          ><i class="fa-solid fa-lock" style="height: 24px"></i
+                        ></span>
+                      </div>
+                      <input
+                        type="text"
+                        name="categoryName"
+                        formControlName="categoryName"
+                        class="form-control"
+                        placeholder="categoryName"
+                        id="categoryName"
+                        required
+                      />
+                    </div>
+                    <div *ngIf="this.addCategoryForm.get('categoryName')?.touched&&this.addCategoryForm.get('categoryName')?.errors" style="color: red;">Invalid Category Name</div>
+                    <div class="input-group form-group mt-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"
+                            ><i class="fa-solid fa-file" style="height: 24px"></i
+                          ></span>
+                        </div>
+                        <input
+                          type="file"
+                          name="image"
+                          class="form-control"
+                          placeholder="image"
+                          (change)="handleInputChange($event)"
+                          id="image"
+                          required
+                          
+                        />
+                      </div>
+                      <div class="filechoosen">
+                        <img src="{{imageSrc}}" alt="Choose File">
+                      </div>
+                     
+                      <div *ngIf="this.addCategoryForm.get('image')?.touched&&this.addCategoryForm.get('image')?.errors" style="color: red;">Invalid Image Format</div>
+                    <div class="input-group form-group mt-2">
+                      <button class="btn btn-primary ">
+                        Submit<i class="fa-solid fa-right-to-bracket"></i>
+                      </button>
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </div>
+</div>
